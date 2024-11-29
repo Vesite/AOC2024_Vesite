@@ -1,0 +1,1 @@
+Day 1 took 0.0 seconds (0.283 Milliseconds) (283.3 Microseconds)
