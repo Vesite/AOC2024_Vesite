@@ -25,6 +25,7 @@ def main():
 
     print("Running File: {}".format(file_path))
 
+    print("--------------------------------------------------------------------------------------")
     # Measure the time before running the day's script
     start_time = time.perf_counter()
 
@@ -44,10 +45,12 @@ def main():
     result_string = "Day {} took {} seconds ({} Milliseconds) ({} Microseconds)".format(user_input, seconds_string, miliseconds_string, microseconds_string)
     print(result_string)
 
+    print("-------------------------------------------------------------------------------------")
+    
     # Make a new file in the folder and store the results
     file_name = user_input + "/time_result.txt"
     with open(file_name, "w") as file_path:
-        file_path.write(result_string)
+        file_path.write("The last run of this file:\n" + result_string)
 
 
 if __name__ == "__main__":

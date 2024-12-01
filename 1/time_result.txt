@@ -1,1 +1,2 @@
-Day 1 took 0.0 seconds (0.283 Milliseconds) (283.3 Microseconds)
+The last run of this file:
+Day 1 took 0.009 seconds (9.196 Milliseconds) (9196.3 Microseconds)
