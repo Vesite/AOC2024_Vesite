@@ -52,6 +52,5 @@ def main():
     with open(file_name, "w") as file_path:
         file_path.write("The last run of this file:\n" + result_string)
 
-
 if __name__ == "__main__":
     main()

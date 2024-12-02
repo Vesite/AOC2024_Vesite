@@ -1,13 +1,14 @@
+# https://adventofcode.com/2024/day/1
 
 with open('1/input.txt', 'r') as file:
     # read the file line by line
-    lines = file.readlines()
-    lines = [line.strip() for line in lines]
+    input_lines = file.readlines()
+    input_lines = [line.strip() for line in input_lines]
 
 # Split the input "lines" into 2 arrays 
 inputs_left = []
 inputs_right = []
-for line in lines:
+for line in input_lines:
     parts = line.split() # Split() Defaults to removing all whitespace, (Split(" ") Only removed one)
     inputs_left.append(int(parts[0]))
     inputs_right.append(int(parts[1]))
