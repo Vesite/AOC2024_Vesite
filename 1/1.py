@@ -27,8 +27,7 @@ print("The total distance between the lists: {}".format(sum(difference_list)))
 
 # --- Part 2 ---
 similarity_score_list = []
-for _i in range(len(inputs_left)):
-    number_check = inputs_left[_i]
+for _i, number_check in enumerate(inputs_left):
     # Count how many times "number_check" appears in the second list
     temp_counter = inputs_right.count(number_check)
     
