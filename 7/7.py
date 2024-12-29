@@ -31,13 +31,11 @@ for line in input_lines:
             result_values_copy.append(int(temp_str))
         result_values = result_values_copy
         line.pop(0)
-    
-    #print(result_values)
 
     # Check if the result in in our "result_values"
     if target in result_values:
         #print("Target: {}".format(target))
         sum += target
 
+print(f"The total calibration result of the true equations (part 2): {sum}")
 
-print(sum)

@@ -62,8 +62,8 @@ for value in blocks_copy:
 if current_id != '.':
     big_blocks_tuples.append((current_id, count))
 
-print(big_blocks_tuples)
-print("")
+#print(big_blocks_tuples)
+#print("")
 
 big_blocks_tuples_copy = big_blocks_tuples[:]
 

@@ -15,8 +15,8 @@ for _i in range(len(input_lines[0])):
 
 width = len(input_lines[0]) - 1
 height = len(grid[0]) - 1
-print(width)
-print(height)
+#print(width)
+#print(height)
 # Count the amount of "#" / "frequencies" in unique locations,
 # but also count them if they overlap with an antenna
 
@@ -72,7 +72,7 @@ for key in antenna_map:
                                 #         new_tuple = (tuple[0], "#")
                                 #         grid[check_x][check_y] = new_tuple
 
-print(grid)
+#print(grid)
 
 
 # Count amount of "#" in the grid
@@ -84,8 +84,4 @@ for _x in range(len(grid)):
                         count += 1
 
 
-print("Total unique location with an antinode: {}".format(count))
-
-
-# Part 2
-
+print("Total unique location with an antinode (part 2): {}".format(count))

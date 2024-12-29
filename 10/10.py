@@ -17,11 +17,6 @@ def run():
 
     width = len(input_lines[0])
     height = len(grid[0])
-    
-    # for _y in range(len(grid)):
-    #     for _x in range(len(grid[0])):
-    #         print("({}, {}) = {}".format(_x, _y, grid[_x][_y]))
-
 
     def count_trailhead_1(_x, _y, _n, _current_score, _grid):
 
@@ -122,10 +117,3 @@ def run():
 if __name__ == "__main__":
     run()
 
-
-
-
-#0123
-#7654
-#8915
-#9876

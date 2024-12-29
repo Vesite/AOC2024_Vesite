@@ -75,7 +75,6 @@ def run():
         current_direction = "up"
         guard_state = (guard_starting_position[0], guard_starting_position[1], current_direction)
         guard_path_set.add(guard_state)
-        # check_repeat_counter = 5000
 
         # First Variable Update
         dx, dy = DIRECTIONS[current_direction]["offset"]
@@ -96,7 +95,6 @@ def run():
                 else:
                     guard_path_set.add(guard_state)
                     
-                
             # Repeating Variable Update
             dx, dy = DIRECTIONS[current_direction]["offset"]
             check_x = int(guard_state[0] + dx)
@@ -104,22 +102,6 @@ def run():
             is_out_of_bounds = (check_x < 0 or check_x >= width or check_y < 0 or check_y >= height)
 
         return False
-
-    # Detect if for any n that is less or = the length of the list
-    # If [:n] = [n:2n]
-    # Then it repeats?
-    # Checks from the start of the list [1, 2, 1, 2] is repeating, [1, 1, 2, 3, 4] is repeating
-    # [1, 2, 1, 3] is not repeating
-    # def is_list_repeating(_list):
-    #     length = len(_list)
-    #     for _n in range(1, math.floor(length / 2) + 1):
-    #         for _i in range(_n):
-    #             if (_list[_i] != _list[_i + _n]):
-    #                 break
-    #         else: # No break means the sublists matched
-    #             return True
-            
-    #     return False
     
     # Count how many times the guard is stuck, on every variation of the grid
     stuck_grids_count = 0
@@ -143,11 +125,3 @@ def run():
 # Call run() if executed directly
 if __name__ == "__main__":
     run()
-
-
-
-
-
-
-
-

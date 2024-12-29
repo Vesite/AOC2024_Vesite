@@ -1,2 +1,2 @@
 The last run of this file:
-Day 6 took 38.101 seconds (38101.008 Milliseconds) (38101007.7 Microseconds)
+Day 6 took 87.249 seconds (87248.602 Milliseconds) (87248601.5 Microseconds)
