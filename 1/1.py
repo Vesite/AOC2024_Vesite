@@ -1,9 +1,8 @@
 # https://adventofcode.com/2024/day/1
 
-with open('1/input.txt', 'r') as file:
-    # read the file line by line
-    input_lines = file.readlines()
-    input_lines = [line.strip() for line in input_lines]
+import helpers
+
+input_lines = helpers.get_input_as_lines("1/input.txt")
 
 # Split the input "lines" into 2 arrays 
 inputs_left = []

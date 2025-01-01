@@ -1,20 +1,11 @@
 
 def run():
 
-    with open('10/input.txt', 'r') as file:
-            # read the file line by line
-            input_lines = file.readlines()
-            input_lines = [line.strip() for line in input_lines]
+    import helpers 
 
-    # Create a 2D Grid that i can access with indexes [_x][_y]
-    # Should make a simple function for this
-    grid = []
-    for _i in range(len(input_lines[0])):
-        column = []
-        for line in input_lines:
-                column.append(line[_i])
-        grid.append(column)
-
+    input_lines = helpers.get_input_as_lines("10/input.txt")
+    grid = helpers.string_to_grid(input_lines)
+    
     width = len(input_lines[0])
     height = len(grid[0])
 
